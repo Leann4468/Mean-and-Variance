@@ -186,9 +186,9 @@ plt.legend(['Regression Line','Data points'])
 ```
 
 # single server
-```
+
 ![image](https://github.com/Leann4468/Mean-and-Variance/assets/121165979/dd0eefdf-0105-4b6e-a097-097112b9db6c)
-```
+
 
 # mulitple capacity
 ```
