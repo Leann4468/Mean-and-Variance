@@ -86,6 +86,7 @@ The mean and variance of arrivals of objects from feeder using probability distr
 
 
 # mean & var
+```
 import numpy as np
 L=[int(i) for i in input().split()]
 N=len(L); M=max(L) 
@@ -107,8 +108,10 @@ var=EX2-mean**2
 SD=np.sqrt(var)
 print("The Mean arrival rate is %.3f "%mean)
 print("The Variance of arrival from feeder is %.3f "%var)
+```
 
 # poisson
+```
 import numpy as np
 import math
 import scipy.stats
@@ -144,8 +147,10 @@ if cal_chi2_sq<table_chi2:
     print("The given data can be fitted in poisson Distribution at 1% LOS")
 else:
     print("The given data cannot be fitted in Poisson Distribution at 1% LOS")
+```
 
 # corr
+```
 import numpy as np
 import math
 import matplotlib.pyplot as plt 
@@ -178,15 +183,15 @@ plt.plot(x,y1,'r')
 plt.xlabel('x-data')
 plt.ylabel('y-data')
 plt.legend(['Regression Line','Data points'])
-
+```
 
 # single server
-
+```
 ![image](https://github.com/Leann4468/Mean-and-Variance/assets/121165979/dd0eefdf-0105-4b6e-a097-097112b9db6c)
+```
 
 # mulitple capacity
-
-'''
+```
 import math
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time=float(input("Enter the mean  inter service time of Lathe Machine (in secs) :  "))
@@ -218,9 +223,10 @@ if (rho<1):
 else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("--------------------------------------------------------------")
+```
 
 # open
-
+```
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time1=float(input("Enter the mean  inter service time of Lathe Machine 1 (in secs) :  "))
 ser_time2=float(input("Enter the mean  inter service time of Lathe Machine 2 (in secs) :  "))
@@ -258,5 +264,5 @@ if (lam <  mu1) and (lam <  mu2) and (lam <  mu3):
 else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("----------------------------------------------------------------------")
-
+```
 
